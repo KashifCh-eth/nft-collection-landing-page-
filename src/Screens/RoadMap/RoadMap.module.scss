@@ -1,0 +1,155 @@
+@import '../../Index.scss';
+
+.main_road_map {
+  width: 100%;
+  height: 100%;
+  margin-top: 9rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10rem;
+  .btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .circle {
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    background: hsla(0, 0%, 100%, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 0 hsl(0deg 0% 100% / 20%);
+    height: 54px;
+    padding: 8px;
+    position: relative;
+    width: 54px;
+    z-index: 99;
+    top: 3rem;
+    right: 5.2rem;
+    .circle_inner {
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: inset 0 8px 4px rgb(0 0 0 / 25%);
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+    .circle_inner::after {
+      background: #4dc3f4;
+      border-radius: 50%;
+      content: '';
+      height: 10px;
+      left: 50%;
+      margin-left: -5px;
+      margin-top: -5px;
+      position: absolute;
+      top: 50%;
+      width: 10px;
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 4rem;
+    .dottedline {
+      position: relative;
+      top: 10.5rem;
+      right: 0.9rem;
+      height: 100%;
+      border-right: 2px dotted white;
+      @include media('mobile') {
+        right: 0.8rem;
+      }
+    }
+  }
+  .road_map_content {
+    width: 70%;
+    margin-top: 4rem;
+    bottom: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    @include media('mobile') {
+      margin-top: 1rem;
+      width: 90%;
+    }
+    h1 {
+      color: #4dc3f4;
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: 0.135em;
+      margin-bottom: 18px;
+      font-family: Lemons-Regular;
+      @include media('mobile') {
+        font-size: 30px;
+      }
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.135em;
+      color: #ffffff;
+      margin-bottom: 24px;
+      font-family: Lemons-Bold;
+      @include media('mobile') {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 1.6em;
+      margin-bottom: 38px;
+      font-family: Lemons-Regular;
+      @include media('mobile') {
+        font-size: 12px;
+      }
+    }
+  }
+  .road_map_head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: #141417;
+      font-size: 100px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      line-height: 1.21em;
+      text-align: center;
+      font-family: Lemons-Bold;
+      @include media('mobile') {
+        font-size: 40px;
+      }
+    }
+    h1 {
+      font-size: 60px;
+      position: absolute;
+      letter-spacing: 0.135em;
+      margin: 0 0 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: Lemons-Bold;
+      top: 1.7rem;
+      @include media('mobile') {
+        font-size: 30px;
+        top: 1rem;
+      }
+    }
+  }
+}

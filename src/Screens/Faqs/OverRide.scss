@@ -1,0 +1,38 @@
+.ant-collapse-icon-position-left,
+.ant-collapse {
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #628290 !important;
+  color: white !important;
+}
+
+.ant-collapse-header {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-family: Lemons-Regular !important;
+  font-weight: bold !important;
+  padding: 20px 0px !important;
+  // padding: 0 !important;
+}
+
+.ant-collapse-arrow{
+  display: none !important;
+}
+
+.ant-collapse-content {
+  background: none !important;
+  font-size: 16px !important;
+  font-family: Lemons-Regular !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .ant-collapse-header {
+    font-size: 14px !important;
+    padding: 20px 0 20px 0 !important;
+  }
+  .ant-collapse-content {
+    font-size: 12px !important;
+  }
+}

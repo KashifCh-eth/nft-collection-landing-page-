@@ -1,0 +1,66 @@
+@import '../../Index.scss';
+
+.section_separator {
+  height: 42px;
+  position: relative;
+  width: 50%;
+  margin-top: 2rem;
+  @include media('mobile') {
+    margin-top: 3rem;
+  }
+}
+.section_separator::before {
+  background: linear-gradient(180deg, #43b1df, #0d5b95 101.19%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0 !important;
+  top: 0;
+  width: 3px;
+  z-index: 9;
+}
+.section_separator::after {
+  background-image: repeating-linear-gradient(
+      13deg,
+      #292931,
+      #292931 18px,
+      transparent 0,
+      transparent 38px,
+      #292931 0
+    ),
+    repeating-linear-gradient(
+      103deg,
+      #292931,
+      #292931 18px,
+      transparent 0,
+      transparent 38px,
+      #292931 0
+    ),
+    repeating-linear-gradient(
+      193deg,
+      #292931,
+      #292931 18px,
+      transparent 0,
+      transparent 38px,
+      #292931 0
+    ),
+    repeating-linear-gradient(
+      283deg,
+      #292931,
+      #292931 18px,
+      transparent 0,
+      transparent 38px,
+      #292931 0
+    );
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  right: -50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}

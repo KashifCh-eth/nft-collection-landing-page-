@@ -1,0 +1,78 @@
+@import '../../Index.scss';
+
+.main_about {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  // margin-top: 10rem;
+  .about_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    @include media('mobile') {
+      padding-left: 1rem;
+    }
+    h1,
+    h2,
+    p {
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 60px;
+      letter-spacing: 0.135em;
+      margin: 0 0 22px;
+      text-transform: uppercase;
+      font-family: Lemons-Bold;
+      @include media('mobile') {
+        font-size: 30px;
+        text-align: center;
+      }
+      span {
+        color: #3a8bae;
+      }
+    }
+    h2 {
+      font-weight: 700;
+      line-height: 1.21em;
+      margin: 0 0 20px;
+      padding: 0;
+      font-family: Lemons-Regular;
+      @include media('mobile') {
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-family: Lemons-Regular;
+      font-weight: bold;
+      letter-spacing: 0.135em;
+      @include media('mobile') {
+        text-align: center;
+        font-size: 11px;
+      }
+    }
+  }
+  .sideBear {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 3rem;
+    img {
+      height: auto;
+      width: 350px;
+      display: block;
+      @include media('mobile') {
+        display: none;
+      }
+    }
+  }
+}

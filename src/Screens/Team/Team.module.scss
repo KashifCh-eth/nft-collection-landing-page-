@@ -1,0 +1,186 @@
+@import '../../Index.scss';
+
+.team::-webkit-scrollbar {
+  display: none;
+}
+
+.main_team {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+  .team {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media('mobile') {
+      overflow-x: scroll;
+      padding: 0;
+      width: 100%;
+      margin-top: 2rem;
+      justify-content: start;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .character1 {
+      width: 350px;
+      height: 100%;
+      color: #ffffff;
+      text-align: center;
+      padding: 0 1rem;
+      img {
+        width: 359px;
+        height: 348px;
+        // display: block;
+        @include media('mobile') {
+          width: 296px;
+          height: 287px;
+        }
+      }
+      h3 {
+        font-family: Lemons-Regular;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.18em;
+        margin-bottom: 10px;
+        padding-top: 1rem;
+        color: #ffffff;
+        @include media('mobile') {
+          font-size: 16px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 0.065em;
+        line-height: 1.21em;
+        font-family: Lemons-Regular;
+        @include media('mobile') {
+          font-size: 12px;
+        }
+      }
+    }
+    .character2 {
+      text-align: center;
+      width: 350px;
+      height: 100%;
+      color: #ffffff;
+      // padding: 0 1rem;
+      // position: relative;
+      // bottom: 1.5rem;
+      @include media('mobile') {
+        bottom: 0;
+      }
+      h3 {
+        font-family: Lemons-Regular;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.18em;
+        margin-bottom: 10px;
+        padding-top: 1rem;
+        color: #ffffff;
+        @include media('mobile') {
+          font-size: 16px;
+        }
+      }
+      img {
+        width: 359px;
+        height: 348px;
+        // display: block;
+        @include media('mobile') {
+          width: 296px;
+          height: 287px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.065em;
+        line-height: 1.21em;
+        font-family: Lemons-Regular;
+        @include media('mobile') {
+          font-size: 12px;
+        }
+      }
+    }
+    .character3 {
+      text-align: center;
+      width: 350px;
+      height: 100%;
+      color: #ffffff;
+      padding: 0 1rem;
+      h3 {
+        font-family: Lemons-Regular;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.18em;
+        margin-bottom: 10px;
+        padding-top: 1rem;
+        color: #ffffff;
+        @include media('mobile') {
+          font-size: 16px;
+        }
+      }
+      img {
+        width: 359px;
+        height: 348px;
+        // display: block;
+        @include media('mobile') {
+          width: 296px;
+          height: 287px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.065em;
+        line-height: 1.21em;
+        font-family: Lemons-Regular;
+        @include media('mobile') {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .team_head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: #141417;
+      font-size: 110px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      line-height: 1.21em;
+      text-align: center;
+      font-family: Lemons-Bold;
+      @include media('mobile') {
+        font-size: 40px;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      position: absolute;
+      letter-spacing: 0.135em;
+      margin: 0 0 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: Lemons-Bold;
+      top: 2.3rem;
+      @include media('mobile') {
+        font-size: 30px;
+        top: 1rem;
+      }
+    }
+  }
+}

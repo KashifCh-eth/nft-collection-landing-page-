@@ -1,0 +1,24 @@
+@import '../../Index.scss';
+
+.main_faqs {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 5rem;
+  @include media('mobile') {
+    width: 95%;
+  }
+  .faqs_head {
+    h1 {
+      font-size: 60px;
+      letter-spacing: 0.135em;
+      margin: 0 0 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: Lemons-Bold;
+      @include media('mobile') {
+        font-size: 30px;
+      }
+    }
+  }
+}

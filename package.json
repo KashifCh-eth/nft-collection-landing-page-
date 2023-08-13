@@ -1,0 +1,56 @@
+{
+  "name": "graphi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.5.8",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "antd": "^4.18.8",
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.3",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.3.0",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-animated-css": "^1.2.1",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
+    "reactstrap": "^9.0.1",
+    "request": "^2.88.2",
+    "sass": "^1.49.8",
+    "slick-carousel": "^1.8.1",
+    "sqlite3": "^5.1.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "node src/setupTests.js | react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

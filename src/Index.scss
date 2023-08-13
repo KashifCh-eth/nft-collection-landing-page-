@@ -1,0 +1,158 @@
+// Colors
+$white: #ffffff;
+$milkywhite: #ffffff;
+$grey: #869099;
+$maroon: #ee405e;
+$black: #000000;
+$primary: #1775f9;
+$primaryLight: #b2b2b2;
+$success: #31c451;
+$danger: #ff333a;
+$warning: #f5c84c;
+$lightGrey: #f9fafc;
+$pink: #e1193b;
+$input_field_grey: #e8e8e8;
+$place_holder: #3c3c43;
+$location_modal_text: #aaa5a5;
+
+// font family
+@font-face {
+  font-family: Lemons;
+  src: url('../src/Fonts/LEMONMILK-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: Painless;
+  src: url('../src/Fonts/Painless.ttf') format('truetype');
+}
+@font-face {
+  font-family: Lemons-Bold;
+  src: url('../src/Fonts/LEMONMILK-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: Lemons-Light;
+  src: url('../src/Fonts/LEMONMILK-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: Lemons-Regular;
+  src: url('../src/Fonts/LEMONMILK-Regular.otf') format('truetype');
+}
+// @font-face {
+//   font-family: Poppins-Regular;
+//   src: url('../src/Fonts/Poppins-Regular.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: Poppins-Light;
+//   src: url('../src/Fonts/Poppins-Light.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: Poppins-ExtraLight;
+//   src: url('../src/Fonts/Poppins-ExtraLight.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: Poppins-Medium;
+//   src: url('../src/Fonts/Poppins-Medium.ttf') format('truetype');
+// }
+
+// Universal styling
+body {
+  font-family: Inter-Regular;
+  color: black;
+  background-color: $lightGrey !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.35s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* border-radius: 10px; */
+  // max-height: 30%;
+  // height: 30%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee405d59;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $maroon;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == land {
+    @media only screen and (max-width: 1450px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 1799px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-large {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.discordBtn {
+  background: linear-gradient(90deg, #60cfff, #0090bd);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.175em;
+  line-height: 109.6%;
+  margin-left: 42px;
+  padding: 24px 36px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: lemons;
+  background: linear-gradient(to left, #4eb3c7 50%, #237d8f 50%, #60cfff);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.2s ease-out;
+  @include media('mobile') {
+    margin: 0;
+    padding: 20px 40px;
+  }
+}
+.discordBtn:hover {
+  background-position: right bottom;
+}
